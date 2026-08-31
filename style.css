@@ -58,6 +58,7 @@ nav.site a:hover { opacity: 1; text-decoration: underline; }
 
 .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin: 24px 0 40px; }
 .product-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+.product-card .product-image { display: block; width: 100%; max-width: 160px; height: 160px; object-fit: contain; margin: 0 auto 14px; background: #fff; border-radius: 10px; }
 .product-card h4 { margin: 0 0 6px; font-size: 16px; color: var(--brand-dark); }
 .product-card .claim { font-size: 13px; color: var(--brand); font-weight: 600; margin-bottom: 8px; }
 .product-card p { font-size: 14px; color: var(--muted); margin: 0 0 14px; }
