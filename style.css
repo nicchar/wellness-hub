@@ -205,3 +205,20 @@ img { display: block; max-width: 100%; }
 .legal-summary p { font-size: 16px; line-height: 1.6; color: rgba(15,31,27,0.8); }
 .legal-toc h2 { font-size: 18px; margin-bottom: 10px; }
 .legal-toc ol { margin: 0; padding-left: 22px; columns: 2 240px; column-gap: 32px; font-size: 15px; line-height: 1.9; }
+
+/* Rezepte */
+.recipe-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: clamp(16px, 2.5vw, 28px); align-items: start; }
+@media (max-width: 760px) { .recipe-grid { grid-template-columns: 1fr; } }
+.recipe-grid h2 { font-size: clamp(22px, 2.3vw, 28px); margin-bottom: 16px; }
+.ing { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; }
+.ing li { padding: 12px 0; border-bottom: 1px solid rgba(15,31,27,0.08); font-size: 16px; line-height: 1.45; color: rgba(15,31,27,0.82); }
+.ing li:last-child { border-bottom: 0; }
+.steps { margin: 0; padding: 0; list-style: none; counter-reset: st; display: flex; flex-direction: column; gap: 16px; }
+.steps li { counter-increment: st; display: grid; grid-template-columns: 38px 1fr; gap: 14px; font-size: 16px; line-height: 1.6; color: rgba(15,31,27,0.82); }
+.steps li::before { content: counter(st); display: grid; place-items: center; width: 34px; height: 34px; border-radius: 12px; font-family: "Sora", sans-serif; font-weight: 600; font-size: 15px; color: #fff; background: var(--grad-btn); background-size: 200% 100%; }
+.nuts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 18px; margin-top: 8px; }
+.nut { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; border-bottom: 1px dashed rgba(15,31,27,0.12); padding: 4px 0; }
+.nut b { font-family: "Sora", sans-serif; font-weight: 600; white-space: nowrap; }
+.body-txt { font-size: 16px; line-height: 1.6; color: rgba(15,31,27,0.75); margin-bottom: 18px; }
+.tags span i { font-size: 16px; vertical-align: -2px; color: var(--teal-icon); }
+@media (max-width: 430px) { .site-nav .hide-xs { display: none; } }
