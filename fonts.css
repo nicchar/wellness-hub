@@ -55,3 +55,7 @@
 .ph-duotone.ph-timer:after{content: "\e493"; margin-left: -1em;}
 .ph-duotone.ph-users:before{content: "\e4d6"; opacity: 0.2;}
 .ph-duotone.ph-users:after{content: "\e4d7"; margin-left: -1em;}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-400.woff2) format('woff2');}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-500.woff2) format('woff2');}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-600.woff2) format('woff2');}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/figtree-700.woff2) format('woff2');}
