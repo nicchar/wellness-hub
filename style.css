@@ -238,3 +238,12 @@ img { display: block; max-width: 100%; }
 .food-card h3 { font-size: 18px; margin-bottom: 6px; }
 .food-card p { font-size: 15px; line-height: 1.55; color: var(--ink-72); margin: 0; }
 .food-card .amount { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 600; color: #8A5E12; background: #FBF0D9; padding: 4px 10px; border-radius: 999px; }
+
+/* Merken & Teilen (Nov. 2026) – einfache Links, kein Fremd-Skript, keine Cookies */
+.share { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.share-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; font: 600 14px/1.2 "Figtree", system-ui, sans-serif; color: var(--ink); background: rgba(255,255,255,0.8); border: 1px solid rgba(35,52,42,0.12); text-decoration: none; cursor: pointer; transition: background .2s ease, transform .2s ease; }
+.share-btn:hover { background: #fff; transform: translateY(-1px); }
+.share-btn svg { width: 16px; height: 16px; color: var(--teal-dark); flex: none; }
+.pin-pill { position: absolute; top: 16px; left: 16px; z-index: 2; display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.92); color: var(--ink); font: 600 14px/1 "Figtree", system-ui, sans-serif; text-decoration: none; box-shadow: 0 8px 20px rgba(35,52,42,0.15); }
+.pin-pill svg { width: 15px; height: 15px; color: #C0392B; }
+.pin-pill:hover { background: #fff; }
